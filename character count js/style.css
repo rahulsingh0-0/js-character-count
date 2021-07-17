@@ -1,0 +1,143 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.longInput {
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0.4em;
+  padding-right: 0.4em;
+  height: 50vh;
+  width: 75vh;
+  font-weight: bold;
+  outline: none;
+  letter-spacing: 1px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 2%;
+  font-size: 22px;
+  padding: 10px;
+}
+.text {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 19px;
+  margin: 10px;
+}
+.bgcolor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 3%;
+}
+.color1,
+.color2,
+.color3,
+.color4,
+.color5 {
+  height: 30px;
+  width: 30px;
+  margin: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.color1 {
+  background: linear-gradient(to right, #c02425, #f0cb35);
+}
+.color2 {
+  background: linear-gradient(to right, #673ab7, #512da8);
+}
+.color3 {
+  background: linear-gradient(to right, #e53935, #e35d5b);
+}
+.color4 {
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+}
+.color5 {
+  background: linear-gradient(to right, #ee9ca7, #ffdde1);
+}
+
+/* media queries for responsiveness */
+@media (max-width: 1025px) {
+  .longInput {
+    width: 60%;
+    height: 40%;
+  }
+}
+@media (max-width: 376px) {
+  .text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 361px) {
+  .text {
+    font-size: 14px;
+  }
+  .bgcolor {
+    height: 10vh;
+    width: 70vw;
+  }
+  .color1,
+  .color2,
+  .color3,
+  .color4,
+  .color5 {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+}
+@media (max-width: 376px) {
+  .text {
+    font-size: 13px;
+  }
+  .longInput {
+    height: 70%;
+    width: 80%;
+  }
+  @media (max-width: 321px) {
+    .text {
+      font-size: 13px;
+    }
+    .longInput {
+      height: 70%;
+      width: 80%;
+    }
+  }
+  @media (max-width: 281px) {
+    .text {
+      font-size: 12px;
+    }
+    .bgcolor {
+      height: 10vh;
+      width: 70vw;
+    }
+    .color1,
+    .color2,
+    .color3,
+    .color4,
+    .color5 {
+      height: 30px;
+      width: 30px;
+      margin: 7px;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+    .longInput {
+      width: 80%;
+    }
+  }
+}
